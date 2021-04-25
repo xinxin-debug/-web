@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>数据结构演示系统</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="data.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+            font-size: 30px;
+        }
+    </style>
+    <style>
+        a {
+            margin-top: -9px;
+        }
+        .btn-group{
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="">
+
+    <div class="row" style="text-align: center;">
+        <div style="position: absolute;z-index: 100;left: 10%;line-height: 60px"><h4 style="line-height: 60px">数据结构演示系统</h4></div>
+        <div class="col-md-12"
+             style="background-color: #dedef8;
+             height: 60px;
+             width: 100%;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+            <div class="btn-group" style="margin-top: 10px">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                    排序
+                </button>
+
+                <div class="dropdown-menu" style="height: 200px">
+                    <div class="nav nav-tabs" role="tablist">
+                        <ol>
+                            <li class="nav-item">
+                                <!-- Dropdown menu links -->
+                                <a class="dropdown-item nav-link active" data-toggle="tab" href="#home" id="maopao" name="冒泡排序"
+                                   _info="int[] swap(int[],int n)实现数据交换"  _struct-data="/**/"   _index="0"
+                                >冒泡排序</a>
+                            </li>
+                            </br>
+                            </br>
+                            <li class="nav-item">
+                                <a class="dropdown-item nav-link" href="#home" data-toggle="tab" name="基数排序"
+                                _index="1"
+                                >基数排序</a>
+                            </li>
+                            </br>
+                            <li class="nav-item">
+                                <a class="dropdown-item nav-link" _index="2" href="#home" data-toggle="tab" name="堆排序">堆排序</a>
+                            </li>
+                            </br>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!--end-->
+            <!--start-->
+            <div class="btn-group" style="margin-top: 10px">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                    字符串
+                </button>
+
+                <div class="dropdown-menu">
+                    <div class="nav nav-tabs" role="tablist">
+                        <ol>
+                            <li class="nav-item">
+                                <!-- Dropdown menu links -->
+                                <a class="dropdown-item nav-link active" data-toggle="tab" href="#home" name="模式匹配">模式匹配</a>
+                            </li>
+                            </br>
+                            <li class="nav-item">
+                                <a class="dropdown-item nav-link " data-toggle="tab" href="#home" name="查找">查找</a>
+                            </li>
+                            </br>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!--end-->
+            <!--start-->
+            <div class="btn-group" style="margin-top: 10px">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                    图
+                </button>
+
+                <div class="dropdown-menu">
+                    <div class="nav nav-tabs" role="tablist">
+                        <ol>
+                            <li class="nav-item">
+                                <!-- Dropdown menu links -->
+                                <a class="dropdown-item nav-link active" data-toggle="tab" href="#home" name="DFS遍历">DFS遍历</a>
+                            </li>
+                            </br>
+                            <li class="nav-item">
+                                <a class="dropdown-item nav-link " data-toggle="tab" href="#home" name="BFS遍历">BFS遍历</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item nav-link " data-toggle="tab" href="#home" name="Prim">Prim</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item nav-link " data-toggle="tab" href="#home" name="Kruskal">Kruskal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item nav-link " data-toggle="tab" href="#home" name="Dijkstra">Dijkstra</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item nav-link " data-toggle="tab" href="#home" name="Floyd">Floyd</a>
+                            </li>
+                            </br>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!--end-->
+            <!--start-->
+            <div class="btn-group" style="margin-top: 10px">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                    树
+                </button>
+
+                <div class="dropdown-menu">
+                    <div class="nav nav-tabs" role="tablist">
+                        <ol>
+                            <li class="nav-item">
+                                <!-- Dropdown menu links -->
+                                <a class="dropdown-item nav-link active" data-toggle="tab" href="#home" name="BST">BST</a>
+                            </li>
+                            </br>
+                            <li class="nav-item">
+                                <a class="dropdown-item nav-link " data-toggle="tab" href="#home" name="堆">堆</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item nav-link " data-toggle="tab" href="#home" name="霍夫曼树">霍夫曼树</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item nav-link " data-toggle="tab" href="#home" name="AVL树">AVL树</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item nav-link " data-toggle="tab" href="#home" name="二叉树转换">二叉树转换</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item nav-link " data-toggle="tab" href="#home" name="线索树">线索树</a>
+                            </li>
+                            </br>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!--end-->
+            <!--start-->
+            <div class="btn-group" style="margin-top: 10px">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                    线性表
+                </button>
+
+                <div class="dropdown-menu">
+                    <div class="nav nav-tabs" role="tablist">
+                        <ol>
+                            <li class="nav-item">
+                                <!-- Dropdown menu links -->
+                                <a class="dropdown-item nav-link active" data-toggle="tab" href="#home" name="顺序表">顺序表</a>
+                            </li>
+                            </br>
+                            <li class="nav-item">
+                                <a class="dropdown-item nav-link " data-toggle="tab" href="#home" name="单链表">单链表</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item nav-link " data-toggle="tab" href="#home" name="栈">栈</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item nav-link " data-toggle="tab" href="#home" name="队列">队列</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item nav-link " data-toggle="tab" href="#home" name="阶乘">阶乘</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item nav-link " data-toggle="tab" href="#home" name="链式队列">链式队列</a>
+                            </li>
+                            </br>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!--end-->
+        </div>
+
+        <!-- Tab panes -->
+        <div class="tab-content container" style="width: 1180px">
+            <div id="home" class="container tab-pane active"><br>
+                <div class="form-group">
+                    <label for="usr">题目标题:</label>
+                    <input type="text" class="form-control" id="usr" name="problem" readonly="readonly">
+                    <label >描述:</label>
+                    <textarea class="form-control" rows="5" name="desc" readonly="readonly"></textarea>
+                    <label >给定输入数据:</label>
+                    <textarea class="form-control" rows="5" name="input_data" readonly="readonly"></textarea>
+                    <label >代码:</label>
+                    <textarea class="form-control" rows="17"  name="code"></textarea>
+                    <label >预期结果:</label>
+                    <textarea class="form-control" rows="5"  name="confim_output" readonly="readonly"></textarea>
+                    <label >你的结果:</label>
+                    <textarea class="form-control" rows="5"  name="output" readonly="readonly"></textarea>
+                    <label >错误信息:</label>
+                    <textarea class="form-control" rows="5"  name="errors" readonly="readonly"></textarea>
+                    <button class="btn  btn-primary compile_button"
+                            data-target="#myModal"
+                            style="margin-top: 10px">提交</button>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="loading" style="visibility:visible">loading...</div>
+</div>
+<script>
+    jQuery.support.cors = true;
+    let index = 0
+        $(function () {
+            let loading = $(".loading");//visibility:hidden
+            loading.css("visibility","hidden");
+        $("a").click(function () {
+            index = parseInt($(this).attr("_index"));
+            $("textarea[name='confim_output']").val("")
+            $("textarea[name='output']").val("")
+            $("textarea[name='errors']").val("")
+            $("input[name='problem']").val(box_info[index].name);
+            $("textarea[name='desc']").val(box_info[index].desc);
+            $("textarea[name='input_data']").val(box_info[index].input_data);
+            // $("textarea[name='struct-data']").val(box_info[index].struct_data);
+            $("textarea[name='code']").val(box_info[index].code);
+            $("textarea[name='confim_output']").val(box_info[index].pre_data);
+
+        })
+        $(".compile_button").click(function() {
+            //data-toggle="modal"
+            loading.css("visibility","visible");
+            $.ajax({
+                url: "http://localhost:80/compile2c",
+                type: "post",
+                dataType: 'json',
+                crossDomain:true,
+                xhrFields:{
+                    withCredentials:true
+                },
+                data: {
+                    "code": $("textarea[name='code']").val(),
+                    "token": "4381fe197827ec87cbac9552f14ec62a",
+                    "language": "7",
+                    "fileext": "c"
+                },
+                headers: {
+                    "Access-Control-Allow-Origin":"*",
+                    'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+                },  //设置请求头
+                success:function(data){
+                    $("textarea[name='output']").val(data.output)
+                    $("textarea[name='errors']").val(data.errors)
+                    loading.css("visibility","hidden");
+                    if(data.output==box_info[index].pre_data){
+                        alert("符合预期")
+                    }else {
+                        alert("代码有误")
+                    }
+                }
+            })
+            // $.ajax({
+            //     url: "http://localhost:80/compile2c",
+            //     type: "post",
+            //     dataType: 'json',
+            //     crossDomain:true,
+            //     xhrFields:{
+            //         withCredentials:true
+            //     },
+            //     data: {
+            //         "code": box_info[index].code,
+            //         "token": "4381fe197827ec87cbac9552f14ec62a",
+            //         "language": "7",
+            //         "fileext": "c"
+            //     },
+            //     headers: {
+            //         "Access-Control-Allow-Origin":"*",
+            //         'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+            //     },  //设置请求头
+            //     success:function(data){
+            //         $("textarea[name='confim_output']").val(data.output)
+            //         loading.css("visibility","hidden");
+            //     }
+            // })
+
+        })
+    })
+</script>
+
+</body>
+
+</html>
