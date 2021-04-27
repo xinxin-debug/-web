@@ -101,9 +101,11 @@ body{
 	margin-top:        20px;
 	margin-left:       4px;
 	margin-right:      4px;*/
+	width: 100px;
+	margin-right: 40px;
 }
 .treeBtn,.lineBtn,.graphBtn{
-	width:             42%;
+	width:             100px;
 	height:            35px;
 	/*padding-right:     20px;*/
 	margin-top:        20px;
@@ -174,7 +176,7 @@ a hover:{
 	left:              46px;
 	width:             0px;
 	height:            105px;
-	background:        rgb(89, 229, 89);
+	background:        rgba(89, 229, 89,0.3);
 	cursor:            pointer; 
 	display:           none;
 }
@@ -418,7 +420,7 @@ a hover:{
 .singleStartHide{
 	width:             42px;
 	height:            70px;
-	background:        rgb(89, 229, 89);
+	background:        rgba(89, 229, 89,0.3);
 	position:          fixed;
 	left:              0px;
 	top:               530px;
@@ -428,13 +430,16 @@ a hover:{
 	position:          relative;
 	top:               27px;
 }
+.subH1{
+	background:        rgba(89, 229, 89,0.3);
+}
 .singleStarts{
 	position:          fixed;
 	top:               530px;
 	left:              46px;
 	width:             0px;
 	height:            70px;
-	background:        rgb(89, 229, 89);
+	background:        rgba(89, 229, 89,0.3);
 	cursor:            pointer; 
 	display:           none;
 }

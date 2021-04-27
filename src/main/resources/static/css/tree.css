@@ -18,7 +18,7 @@
 	left:              46px;
 	width:             0px;
 	height:            35px;
-	background:        rgb(89, 229, 89);
+	background:        rgba(89, 229, 89,0.3);
 	cursor:            pointer; 
 	display:           none;
 }
@@ -78,7 +78,7 @@
 	left:              46px;
 	width:             0px;
 	height:            35px;
-	background:        rgb(89, 229, 89);
+	background:        rgba(89, 229, 89,0.3);
 	cursor:            pointer; 
 	display:           none;
 }
@@ -147,7 +147,7 @@
 	left:              46px;
 	width:             0px;
 	height:            35px;
-	background:        rgb(89, 229, 89);
+	background:        rgba(89, 229, 89,0.3);
 	cursor:            pointer; 
 	display:           none;
 }
@@ -167,7 +167,7 @@
 	top:               565px;
 	width:             200px;
 	height:            35px;
-	background:        rgb(89,229,89);
+	background:        rgba(89,229,89,0.3);
 	display:           none;
 	cursor:            pointer; 
 }
@@ -223,7 +223,7 @@
     width:             42px;
 	/*height:            175px;*/
 	height:            35px;
-	background:        rgb(89, 229, 89);
+	background:        rgba(89, 229, 89,0.3);
 	position:          fixed;
 	left:              0px;
 	/*top:               425px;*/
@@ -390,7 +390,7 @@
 .HuffmanStartHide{
 	width:             42px;
 	height:            70px;
-	background:        rgb(89, 229, 89);
+	background:        rgba(89, 229, 89,0.3);
 	position:          fixed;
 	left:              0px;
 	top:               530px;
@@ -400,6 +400,18 @@
 	position:          relative;
 	top:               25px;
 }
+.r1 {
+	background:        rgba(89, 229, 89,0.3);
+}
+.r2 {
+	background:        rgba(89, 229, 89,0.3);
+}
+.r3 {
+	background:        rgba(89, 229, 89,0.3);
+}
+.r4 {
+	background:        rgba(89, 229, 89,0.3);
+}
 .HuffmanStarts{
 	position:          fixed;
 	/*border:            1px solid red;*/
@@ -407,7 +419,7 @@
 	left:              46px;
 	width:             0px;
 	height:            70px;
-	background:        rgb(89, 229, 89);
+	background:        rgba(89, 229, 89,0.3);
 	cursor:            pointer; 
 	display:           none;
 }
@@ -462,7 +474,7 @@
 .ThrdBtreestartHide{
 	width:             42px;
 	height:            140px;
-	background:        rgb(89, 229, 89);
+	background:        rgba(89, 229, 89,0.3);
 	position:          fixed;
 	left:              0px;
 	top:               460px;

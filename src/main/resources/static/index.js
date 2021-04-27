@@ -31,290 +31,290 @@ $(function(){
     $('.length').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.init').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.serialNumber').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.insertNumber').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
     
     $('.insertGo').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.deleteNumber').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
 
     $('.deleteGo').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.subS1').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.subS2').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.subS3').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.subT1').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.subT2').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.subU1').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.subU2').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.subU3').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
     
     $('.subX1').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.subX2').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.subX3').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.subX4').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.subC1').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.subC2').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.subV1').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.subV2').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.subW1').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.subW2').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.subW3').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.subY1').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.subY2').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.subY3').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.subA1').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.subD1').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.subH1').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
      $('.subB1').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.singleStarts p').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.stackStarts p').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.queueStarts p').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.graphDFSStarts p').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
     
     $('.primStarts p').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.kruStarts p').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.dijStarts p').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.compareSortStarts p').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.radixSortStarts p').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.patternStarts p').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.searchStarts p').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.avlTreeStarts p').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
     
     $('.heapStarts p').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.bstTreeStarts p').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.BT2TStarts p').mouseenter(function(){
         $(this).css('background','black');
     }).mouseleave(function(){
-        $(this).css('background','rgb(89, 229, 89)');
+        $(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     //代码行鼠标放上去边色函数
@@ -392,7 +392,7 @@ $(function(){
     $('.starts p').mouseenter(function(){
     	$(this).css('background','black');
     }).mouseleave(function(){
-    	$(this).css('background','rgb(89, 229, 89)');
+    	$(this).css('background','rgba(89, 229, 89,0.3)');
     });
 
     $('.starts p').click(function(){
@@ -1823,5 +1823,5 @@ function enterFun(obj){
     $(obj).css('background','black');
 }
 function leaveFun(obj){
-    $(obj).css('background','rgb(89, 229, 89)');
+    $(obj).css('background','rgba(89, 229, 89,0.3)');
 }
