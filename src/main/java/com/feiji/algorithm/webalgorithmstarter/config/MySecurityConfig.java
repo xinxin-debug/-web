@@ -1,6 +1,7 @@
 package com.feiji.algorithm.webalgorithmstarter.config;
 
 import com.feiji.algorithm.webalgorithmstarter.handler.CustomAuthenticationSuccessHandler;
+import com.feiji.algorithm.webalgorithmstarter.handler.MyAuthenticationFailHandler;
 import com.feiji.algorithm.webalgorithmstarter.service.MyUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -26,6 +27,8 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
     private PasswordEncoder passwordEncoder;
+    @Autowired
+    private MyAuthenticationFailHandler failHandler;
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable() //禁用跨站csrf攻击防御
@@ -35,6 +38,7 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
                 .usernameParameter("username")///登录表单form中用户名输入框input的name名，不修改的话默认是username
                 .passwordParameter("password")//form中密码输入框input的name名，不修改的话默认是password
                 .successHandler(successHandler)
+                .failureHandler(failHandler)
                 //.defaultSuccessUrl("/res/index.html")//登录认证成功后默认转跳的路径
                 .and()
                 .authorizeRequests()

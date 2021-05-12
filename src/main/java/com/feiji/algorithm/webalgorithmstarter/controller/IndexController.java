@@ -2,6 +2,7 @@ package com.feiji.algorithm.webalgorithmstarter.controller;
 
 import com.feiji.algorithm.webalgorithmstarter.pojo.CompileParams;
 import com.feiji.algorithm.webalgorithmstarter.pojo.CompileResult;
+import com.feiji.algorithm.webalgorithmstarter.utils.ApiResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
 import org.springframework.stereotype.Controller;
@@ -21,8 +22,11 @@ public class IndexController {
 
     // 登录
     @PostMapping("/login")
-    public void login(String username, String password, HttpServletResponse response) throws IOException {
-        response.sendRedirect("/res/index.html");
+    @ResponseBody
+    public ApiResult login(String username, String password, HttpServletResponse response) throws IOException {
+        System.out.println("-------------------------");
+        return ApiResult.ok();
+//        response.sendRedirect("/res/index.html");
     }
 
     @GetMapping("/")
