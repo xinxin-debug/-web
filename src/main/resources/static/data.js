@@ -29,12 +29,8 @@ const box_info = [
             "int main()      //主函数 \n" +
             "{\n" +
             "    int i,n,a;\n" +
-            "    int number[3][8];\n" +
-            "    for(int j=0;j<3;j++){    //用一个for循环来输入所有数字 \n" +
-            "       \tfor(int a=0;a<8;a++){\n" +
-            "       \tscanf(\"%d\",&number[j][a]) ;\n" +
-            "\t\t}\n" +
-            "\t}\n" +
+            "    int number[3][8]={{8,7,6,5,4,3,2,1},{9,7,6,5,4,3,2,1},\n" +
+            "\t\t\t\t\t{0,8,7,6,5,3,2,1}};\n" +
             "\tfor(i=0;i<3;i++){\n" +
             "\t\tbubble_sort(number[i],8);//引用函数bubble_sort\n" +
             "\t}    \n" +
