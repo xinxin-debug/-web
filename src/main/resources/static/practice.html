@@ -286,7 +286,8 @@
                     $("textarea[name='errors']").val(data.errors)
                     loading.css("visibility","hidden");
                     //代码结果比较
-                    if(data.output==box_info[index].pre_data){
+                    alert(box_info[index].pre_data.join("\n"))
+                    if(data.output==box_info[index].pre_data.join("\n")){
                         alert("符合预期")
                     }else {
                         alert("代码有误")
