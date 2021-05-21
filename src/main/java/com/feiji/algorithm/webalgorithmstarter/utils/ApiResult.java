@@ -4,6 +4,9 @@ import lombok.Data;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 接口信息统一返回格式
+ */
 @Data
 public class ApiResult {
     private Boolean success;

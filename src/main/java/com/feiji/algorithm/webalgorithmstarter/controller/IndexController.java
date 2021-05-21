@@ -14,6 +14,9 @@ import org.springframework.web.client.RestTemplate;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+/**
+ * 提供编译接口。
+ */
 @Controller
 @CrossOrigin("*")
 public class IndexController {

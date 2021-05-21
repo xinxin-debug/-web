@@ -14,6 +14,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * 具体实现用户登陆逻辑，
+ */
 @Component
 public class MyUserDetailsService implements UserDetailsService {
 

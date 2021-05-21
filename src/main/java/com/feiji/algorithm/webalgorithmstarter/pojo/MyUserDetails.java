@@ -6,7 +6,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 
-
+/**
+ * 保存用户登陆信息
+ */
 @ToString
 public class MyUserDetails implements UserDetails {
     String password;  //密码

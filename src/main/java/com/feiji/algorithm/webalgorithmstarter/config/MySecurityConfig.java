@@ -15,6 +15,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 import javax.annotation.Resource;
 
+/**
+ * 配置登陆页面地址，求登录的地址
+ */
 @Configuration
 public class MySecurityConfig extends WebSecurityConfigurerAdapter {
 
@@ -24,7 +27,6 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private CustomAuthenticationSuccessHandler successHandler;
 
-
     @Autowired
     private PasswordEncoder passwordEncoder;
     @Autowired
@@ -33,14 +35,20 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable() //禁用跨站csrf攻击防御
                 .formLogin()
+                //登陆页面地址
                 .loginPage("/res/login.html")//一旦用户的请求没有权限就跳转到这个页面
+                //登陆地址
                 .loginProcessingUrl("/login")//登录表单form中action的地址，也就是处理认证请求的路径
+                // 表单输入框名字
                 .usernameParameter("username")///登录表单form中用户名输入框input的name名，不修改的话默认是username
                 .passwordParameter("password")//form中密码输入框input的name名，不修改的话默认是password
+                // 成功时候执行的代码
                 .successHandler(successHandler)
+                // 失败时候执行的代码
                 .failureHandler(failHandler)
                 //.defaultSuccessUrl("/res/index.html")//登录认证成功后默认转跳的路径
                 .and()
+                // 资源拦截请齐规则
                 .authorizeRequests()
                 .antMatchers("/res/login.html","/login","/compile2c").permitAll()//不需要通过登录验证就可以被访问的资源路径
                 .antMatchers("/","/biz1","/biz2") //资源路径匹配

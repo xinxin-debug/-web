@@ -7,6 +7,9 @@ import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
+/**
+ * 保存sql语句，mybaties
+ */
 @Mapper
 public interface MyUserDetailsServiceMapper {
     //根据userID查询用户信息

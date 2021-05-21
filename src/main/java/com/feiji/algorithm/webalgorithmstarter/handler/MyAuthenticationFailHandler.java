@@ -11,6 +11,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+/**
+ * 登陆失败的回调
+ */
 @Component
 public class MyAuthenticationFailHandler implements AuthenticationFailureHandler {
     @Override

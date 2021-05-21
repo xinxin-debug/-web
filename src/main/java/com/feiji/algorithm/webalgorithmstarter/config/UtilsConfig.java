@@ -7,6 +7,9 @@ import org.springframework.web.client.RestTemplate;
 
 import java.time.Duration;
 
+/**
+ * 配置http请求工具的
+ */
 @Configuration
 public class UtilsConfig {
     @Bean
