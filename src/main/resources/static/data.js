@@ -48,21 +48,25 @@ const box_info = [
         //输入的三组数据
         input_data:["8 7 6 5 4 3 2 1","9 7 6 5 4 3 2 1","0 8 7 6 5 3 2 1"],
         //输出的三组数据
-        pre_data:["1 2 3 4 5 6 7 8 ","1 2 3 4 5 6 7 9 ","0 1 2 3 5 6 7 8 "],
+        pre_data:["1 2 3 4 5 6 7 8 ","1 2 3 4 5 6 7 9 ","0 1 2 3 5 6 7 8 "]
     },
     {
         name:"比较排序",
         desc:desc,
-        input_data:"103,102,101,401,489,345,322,710,500,609,800,0,3,4\n12,12,23,34,54,65,45,65,76,87\n12,24,44,65,22,45,65,787,909,232",
-        pre_data: "0 3 4 101 102 103 322 345 401 489 500 609 710 800 \n87 76 65 65 54 45 34 23 12 12 \n909 787 232 65 65 45 44 24 22 12 ",
+        //输入的三组数据
+        input_data:["8 7 6 5 4 3 2 1","9 7 6 5 4 3 2 1","0 8 7 6 5 3 2 1"],
+        //输出的三组数据
+        pre_data:["1 2 3 4 5 6 7 8 ","1 2 3 4 5 6 7 9 ","0 1 2 3 5 6 7 8 "],
         struct_data:""
     },
     {
         name:"堆排序",
         desc:desc,
         struct_data:"",
-        input_data:"49,38,65,97,76,13,27,49\n5,2,6,0,3,9,1,7,4\n11,51,23,63,0,33,93,13,71,4",
-        pre_data: "13 27 38 49 49 65 76 97 \n0  0  1  2  3  4  6  7  9  \n0  4 13 23 33 51 63 71 93 "
+        //输入的三组数据
+        input_data:["8 7 6 5 4 3 2 1","9 7 6 5 4 3 2 1","0 8 7 6 5 3 2 1"],
+        //输出的三组数据
+        pre_data:["1 2 3 4 5 6 7 8 ","1 2 3 4 5 6 7 9 ","0 1 2 3 5 6 7 8 "]
     },
     {
         name:"宽度优先遍历",
@@ -75,7 +79,7 @@ const box_info = [
             "\n" +
             "输出格式：\n" +
             "输出生成树的边序列，边的第start个顶点构成的序列应是顶点访问序列。",
-        input_data: "6\n" +
+        input_data: ["6\n" +
             "A\n" +
             "B\n" +
             "C\n" +
@@ -90,9 +94,41 @@ const box_info = [
             "( 2 3 )\n" +
             "( 4 5 )\n" +
             "x\n" +
-            "0",
-        pre_data: "tree edges: <-1,A> <A,B> <A,C> <A,F> <B,D> <F,E> \n" +
-            "visit sequence: A B C F D E "
+            "0","6\n" +
+        "A\n" +
+        "B\n" +
+        "C\n" +
+        "D\n" +
+        "E\n" +
+        "F\n" +
+        "( 0 1 )\n" +
+        "( 0 2 )\n" +
+        "( 0 5 )\n" +
+        "( 1 3 )\n" +
+        "( 1 5 )\n" +
+        "( 2 3 )\n" +
+        "( 4 5 )\n" +
+        "x\n" +
+        "0","6\n" +
+        "A\n" +
+        "B\n" +
+        "C\n" +
+        "D\n" +
+        "E\n" +
+        "F\n" +
+        "( 0 1 )\n" +
+        "( 0 2 )\n" +
+        "( 0 5 )\n" +
+        "( 1 3 )\n" +
+        "( 1 5 )\n" +
+        "( 2 3 )\n" +
+        "( 4 5 )\n" +
+        "x\n" +
+        "0"],
+        pre_data: ["tree edges: <-1,A> <A,B> <A,C> <A,F> <B,D> <F,E> \n" +
+            "visit sequence: A B C F D E ","tree edges: <-1,A> <A,B> <A,C> <A,F> <B,D> <F,E> \n" +
+        "visit sequence: A B C F D E ","tree edges: <-1,A> <A,B> <A,C> <A,F> <B,D> <F,E> \n" +
+        "visit sequence: A B C F D E "]
     },
     {
         name:"深度优先遍历",
@@ -105,7 +141,7 @@ const box_info = [
             "\n" +
             "输出格式：\n" +
             "输出生成树的边序列，边的第start个顶点构成的序列应是顶点访问序列",
-        input_data: "6\n" +
+        input_data: ["6\n" +
             "A\n" +
             "B\n" +
             "C\n" +
@@ -120,9 +156,41 @@ const box_info = [
             "( 2 3 )\n" +
             "( 4 5 )\n" +
             "x\n" +
-            "0",
-        pre_data:"tree edges: <-1,A> <A,B> <B,D> <D,C> <B,F> <F,E>\n" +
-            "visit sequence: A B D C F E"
+            "0","6\n" +
+        "A\n" +
+        "B\n" +
+        "C\n" +
+        "D\n" +
+        "E\n" +
+        "F\n" +
+        "( 0 1 )\n" +
+        "( 0 2 )\n" +
+        "( 0 5 )\n" +
+        "( 1 3 )\n" +
+        "( 1 5 )\n" +
+        "( 2 3 )\n" +
+        "( 4 5 )\n" +
+        "x\n" +
+        "0","6\n" +
+        "A\n" +
+        "B\n" +
+        "C\n" +
+        "D\n" +
+        "E\n" +
+        "F\n" +
+        "( 0 1 )\n" +
+        "( 0 2 )\n" +
+        "( 0 5 )\n" +
+        "( 1 3 )\n" +
+        "( 1 5 )\n" +
+        "( 2 3 )\n" +
+        "( 4 5 )\n" +
+        "x\n" +
+        "0"],
+        pre_data:["tree edges: <-1,A> <A,B> <B,D> <D,C> <B,F> <F,E>\n" +
+            "visit sequence: A B D C F E","tree edges: <-1,A> <A,B> <B,D> <D,C> <B,F> <F,E>\n" +
+        "visit sequence: A B D C F E","tree edges: <-1,A> <A,B> <B,D> <D,C> <B,F> <F,E>\n" +
+        "visit sequence: A B D C F E"]
     },
     {
         name: "由双遍历序列构造二叉树",
@@ -139,9 +207,11 @@ const box_info = [
             "\n" +
             "输出格式：\n" +
             "输出后序序列",
-        input_data: "ABDECFG\n" +
-            "DBEAFCG",
-        pre_data: "Post Travel Result：DEBFGCA"
+        input_data: ["ABDECFG\n" +
+            "DBEAFCG","ABDECFG\n" +
+        "DBEAFCG","ABDECFG\n" +
+        "DBEAFCG"],
+        pre_data: ["Post Travel Result：DEBFGCA","Post Travel Result：DEBFGCA","Post Travel Result：DEBFGCA"]
     },
     {
         name: "打印二叉树",
@@ -157,13 +227,23 @@ const box_info = [
             "\n" +
             "输出格式：\n" +
             "输出打印结果",
-        input_data: "ABD^C^E",
-        pre_data: "Print (Root Left)：\n" +
+        input_data: ["ABD^C^E","ABD^C^E","ABD^C^E"],
+        pre_data: ["Print (Root Left)：\n" +
             "--------------E\n" +
             "---------D\n" +
             "----A\n" +
             "--------------C\n" +
-            "---------B"
+            "---------B","Print (Root Left)：\n" +
+        "--------------E\n" +
+        "---------D\n" +
+        "----A\n" +
+        "--------------C\n" +
+        "---------B","Print (Root Left)：\n" +
+        "--------------E\n" +
+        "---------D\n" +
+        "----A\n" +
+        "--------------C\n" +
+        "---------B"]
     },
     {
         name:"实现一个顺序存储的线性表",
@@ -206,11 +286,17 @@ const box_info = [
             "//释放线性表空间\n" +
             "    SL_Free(slist);\n" +
             "}",
-        input_data: "5  //输入线性表的长度\n" +
+        input_data: ["5  //输入线性表的长度\n" +
             "8 9 12 33 45 //依次输入线性表的数据元素\n" +
             "2  //删除线性表的2号数据元素\n" +
-            "33  //删除值为33的数据元素",
-        pre_data: "8 9 45  //输出当前线性表的数据元素"
+            "33  //删除值为33的数据元素","5  //输入线性表的长度\n" +
+        "8 9 12 33 45 //依次输入线性表的数据元素\n" +
+        "2  //删除线性表的2号数据元素\n" +
+        "33  //删除值为33的数据元素","5  //输入线性表的长度\n" +
+        "8 9 12 33 45 //依次输入线性表的数据元素\n" +
+        "2  //删除线性表的2号数据元素\n" +
+        "33  //删除值为33的数据元素"],
+        pre_data: ["8 9 45  //输出当前线性表的数据元素","8 9 45  //输出当前线性表的数据元素","8 9 45  //输出当前线性表的数据元素"]
     },
     {
         name: "实现一个链接存储的线性表",
@@ -266,13 +352,23 @@ const box_info = [
             "    system(\"PAUSE\");\n" +
             "    LL_Free(llist);\n" +
             "}",
-        input_data: "3 //输入一个数a，后面将输入a个数据元素\n" +
+        input_data: ["3 //输入一个数a，后面将输入a个数据元素\n" +
             "8 9 3  //a个数据元素，依次插入尾结点后。形成单链表结点序列：8,9,3\n" +
             "3  //输入一个数b，后面将再输入b个数据元素\n" +
             "10 89 22  //b个数据元素，依次插入0号结点后。形成单链表结点序列：8,22,89,10,9,3\n" +
             "89  //删除一个值为89的结点\n" +
-            "1  //删除1号结点",
-        pre_data: "8 10 9 3"
+            "1  //删除1号结点","3 //输入一个数a，后面将输入a个数据元素\n" +
+        "8 9 3  //a个数据元素，依次插入尾结点后。形成单链表结点序列：8,9,3\n" +
+        "3  //输入一个数b，后面将再输入b个数据元素\n" +
+        "10 89 22  //b个数据元素，依次插入0号结点后。形成单链表结点序列：8,22,89,10,9,3\n" +
+        "89  //删除一个值为89的结点\n" +
+        "1  //删除1号结点","3 //输入一个数a，后面将输入a个数据元素\n" +
+        "8 9 3  //a个数据元素，依次插入尾结点后。形成单链表结点序列：8,9,3\n" +
+        "3  //输入一个数b，后面将再输入b个数据元素\n" +
+        "10 89 22  //b个数据元素，依次插入0号结点后。形成单链表结点序列：8,22,89,10,9,3\n" +
+        "89  //删除一个值为89的结点\n" +
+        "1  //删除1号结点"],
+        pre_data: ["8 10 9 3","8 10 9 3","8 10 9 3"]
     },
     {
         name: "计算中缀表达式",
@@ -330,8 +426,8 @@ const box_info = [
             "    /********** Begin *********/\n" +
             "    /********** End **********/\n" +
             "}",
-        input_data:"(1+2)*(9-6)",
-        pre_data: "result = 9.000000"
+        input_data:["(1+2)*(9-6)","(1+2)*(9-6)","(1+2)*(9-6)"],
+        pre_data: ["result = 9.000000","result = 9.000000","result = 9.000000"]
     },
     {
         name: "计算后缀表达式",
@@ -366,8 +462,8 @@ const box_info = [
             "输入一个后缀表达式。表达式中的操作数都是一个非负的个位数。\n" +
             "输出格式：\n" +
             "输出该表达式的值。",
-        input_data: "12+96-*",
-        pre_data: "result = 9.000000"
+        input_data: ["12+96-*","12+96-*","12+96-*"],
+        pre_data: ["result = 9.000000","result = 9.000000","result = 9.000000"]
     },
     {
         name: "实现折半查找",
@@ -481,7 +577,7 @@ const box_info = [
             "输出表的长度，然后从表头到表尾依次输出各元素。\n" +
             "\n" +
             "以下是平台对 step1/Main.cpp 的样例测试集：",
-        input_data:"9\n" +
+        input_data:["9\n" +
             "insert 9\n" +
             "insert 8\n" +
             "insert 89\n" +
@@ -490,9 +586,29 @@ const box_info = [
             "insert 13\n" +
             "delete 11\n" +
             "delete 5\n" +
-            "end",
-        pre_data: "list length: 5\n" +
-            "The list contains: 8  9  13  22  89"
+            "end","9\n" +
+        "insert 9\n" +
+        "insert 8\n" +
+        "insert 89\n" +
+        "insert 11\n" +
+        "insert 22\n" +
+        "insert 13\n" +
+        "delete 11\n" +
+        "delete 5\n" +
+        "end","9\n" +
+        "insert 9\n" +
+        "insert 8\n" +
+        "insert 89\n" +
+        "insert 11\n" +
+        "insert 22\n" +
+        "insert 13\n" +
+        "delete 11\n" +
+        "delete 5\n" +
+        "end"],
+        pre_data: ["list length: 5\n" +
+            "The list contains: 8  9  13  22  89","list length: 5\n" +
+        "The list contains: 8  9  13  22  89","list length: 5\n" +
+        "The list contains: 8  9  13  22  89"]
     },
     {
         name: "实现散列查找",
@@ -611,7 +727,7 @@ const box_info = [
             "\n" +
             "输出格式：\n" +
             "输出n个独立链表。",
-        input_data: "11\n" +
+        input_data: ["11\n" +
             "insert 54\n" +
             "insert 77\n" +
             "insert 94\n" +
@@ -622,8 +738,30 @@ const box_info = [
             "insert 23\n" +
             "insert 43\n" +
             "insert 47\n" +
-            "end",
-        pre_data: "0:  77\n" +
+            "end","11\n" +
+        "insert 54\n" +
+        "insert 77\n" +
+        "insert 94\n" +
+        "insert 89\n" +
+        "insert 14\n" +
+        "insert 45\n" +
+        "insert 76\n" +
+        "insert 23\n" +
+        "insert 43\n" +
+        "insert 47\n" +
+        "end","11\n" +
+        "insert 54\n" +
+        "insert 77\n" +
+        "insert 94\n" +
+        "insert 89\n" +
+        "insert 14\n" +
+        "insert 45\n" +
+        "insert 76\n" +
+        "insert 23\n" +
+        "insert 43\n" +
+        "insert 47\n" +
+        "end"],
+        pre_data: ["0:  77\n" +
             "    1:  89  -> 45  -> 23\n" +
             "    2:  -\n" +
             "    3:  14  -> 47\n" +
@@ -633,7 +771,27 @@ const box_info = [
             "    7:  -\n" +
             "    8:  -\n" +
             "    9:  -\n" +
-            "   10:  54  -> 76  -> 43"
+            "   10:  54  -> 76  -> 43","0:  77\n" +
+        "    1:  89  -> 45  -> 23\n" +
+        "    2:  -\n" +
+        "    3:  14  -> 47\n" +
+        "    4:  -\n" +
+        "    5:  -\n" +
+        "    6:  94\n" +
+        "    7:  -\n" +
+        "    8:  -\n" +
+        "    9:  -\n" +
+        "   10:  54  -> 76  -> 43","0:  77\n" +
+        "    1:  89  -> 45  -> 23\n" +
+        "    2:  -\n" +
+        "    3:  14  -> 47\n" +
+        "    4:  -\n" +
+        "    5:  -\n" +
+        "    6:  94\n" +
+        "    7:  -\n" +
+        "    8:  -\n" +
+        "    9:  -\n" +
+        "   10:  54  -> 76  -> 43"]
     }
 
 ]
